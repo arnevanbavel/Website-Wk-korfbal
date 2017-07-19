@@ -1,0 +1,66 @@
+falling ball
+collect coins
+high score = falling distance X stylepoints X coins collected
+
+avoid obstacles
+- blocking men
+- falling stones
+- passing spikes
+- wind blowers that move you
+- flashing light
+
+
+power ups
+- coin mania (lots of coins comming)
+- immune to damage for a while
+- rainbowball(lots of style points)
+- super goals(goals coming that give lots of points)
+- bomb shooter(you can shoot one bomb forward that explodes and clears a few obstacles)
+
+power down
+- makes you bigger for a while
+- obstacle mania( lots of obstacles coming)
+
+stylepoints getting
+- press the shown keys at the right moment(give ball spin)
+- catching paintballs changing the color of the ball
+- passing trough goals
+- collecting power ups
+- extra style multiplier per kind of ball(better ball from shop gives more style)
+
+upgrade shop
+- fall slower(parachute on ball)
+- gun to destroy wall(with finger press)
+- first 5 seconds ghost that can move trough walls
+- become smaller
+- coin magnet
+- stronger ball
+- new skin for ball
+- distance passing of 500m in begin of game
+- start value of 500 stylepoints
+- coin mania lasts longer
+- enable jumping faster
+
+new game modes(unlockable)
+- unicorn mode(everything is fluffy and pink with an anoying song)
+- night mode(you can only see a bit of the level around the ball)
+- explosion mode(allot of things flashing an exploding)
+- rocket mode(ball gets rockets and everything goes twice as fast)
+- god mode(ball is unbreakable and you can cause allot of mayham by shooting lightning)
+
+achievements(to unlock game modes)
+- reach a distance(levels distance is longer when level gets higher)
+- collect an amount of coins
+- buy a certain upgrade in the shop
+- score an amount of goals
+- give more spin a few times in a row
+- publish a high score
+- collect a few power ups
+- play an amount of times in a row
+- change color a few times in a row
+- unlock the gun
+
+options
+facebook deelknop voor highscore
+shootertimer die aftelt en tijd bij voor het raken van de ring
+einde = scheidsrechter met rode kaart

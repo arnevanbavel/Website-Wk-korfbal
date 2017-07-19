@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+p {
+    line-height: 25px;
+}
+
+
+
+
+
+/* PAGE LAYOUT */
+html {
+    overflow-y: scroll;
+    font-family: Ubuntu, sans-serif;
+}
+
+body {
+    position: relative; 
+    overflow: hidden;
+}
+
+/* GENERAL CLASSES */
+
+.page {
+    width: 100%;
+    background: #EBEBEB;
+    position: relative;
+    left: 0px;
+    z-index: 2;
+}
+.pageContainer {
+    width: 900px;
+    margin: auto;
+    position: relative;
+    background: #EBEBEB;
+}
+
+.activeMenu {
+    background: white !important;
+    opacity: 1;
+}
+
+.menuHidden {
+    opacity: 0;
+}
+
+div.individualContainer {
+    background: white;
+    display: inline-block;
+    width: 100%;
+}
+
+div.individualContainer .container {
+    float: left;
+}
+
+div.individualContainer .leftContainer {
+    padding: 20px;
+    width: calc(50% - 42.5px);
+    position: relative;
+}
+
+div.individualContainer .leftContainer h1 {
+    font-size: 2em;
+    width: 100%;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+div.individualContainer .leftContainer p {
+    font-size: 1.1em;
+    width: 100%;
+    font-weight: 100;
+}
+
+div.individualContainer .leftContainer img {
+    position: absolute;
+    width: 30px;
+    top: 20px;
+    right: 20px;
+}
+
+div.individualContainer .rightContainer {
+    border-left: 5px solid #EBEBEB;
+    width: calc(50% - 2.5px);
+}
+
+div.individualContainer .rightContainer img {
+    width: 100%;
+}
+
+div.individualContainer .rightContainer .image {
+    width: 100%;
+    height: 325px;
+}
+
+div.individualContainer .bottomContainer {
+    width: 100%;
+    border-top: 5px solid #EBEBEB;
+    display: inline-block;
+}
+
+div.individualContainer .bottomContainer img {
+    width: 100%;
+}
+
+div.blockTitle {
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 120px;
+    background: white;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 100;
+    display: inline-block;
+}
+
+.blockTitle a {
+    font-size: 1.5em;
+    color: black;
+    transition: color 0.5s ease;
+    width: 100%;
+    font-weight: 500;
+}
+
+.blockTitle:hover a {
+    color: rgb(162, 162, 162);
+}
+
+.blockTitle h1 {
+    font-size: 1.5em;
+    color: black;
+}
+
+.bottomBlockTitle {
+    margin-top: 40px !important;
+}
+
+.span4Container {
+    width: 100%;
+    display: inline-block;
+}
+
+.span4 {
+    float: left;
+    display: inline-block;
+    width: calc(25% - 15px);
+    margin-right: 20px;
+    margin-bottom: 20px; 
+    background: white;
+}
+
+div.span4Container > div.span4:nth-child(4n+0) {
+    margin-right: 0px;
+}
+
+.span2Container {
+    width: 100%;
+    display: inline-block;
+}
+
+.span2 {
+    float: left;
+    display: inline-block;
+    width: calc(50% - 10px);
+    margin-right: 20px;
+    margin-bottom: 20px; 
+    background: white;
+}
+
+div.span2Container > div.span2:nth-child(2n+0) {
+    margin-right: 0px;
+}
+
+.highlight {
+    background: rgb(6, 169, 238) !important;
+}
+
+.labels {
+    width: calc(100% - 40px);
+    margin: 0 20px 20px;
+    height: 24px;
+    overflow: hidden;
+}
+
+.labels .label {
+    background: rgb(6, 169, 238);
+    color: white;
+    padding: 5px;
+    width: auto;
+    display: inline-block;
+    font-weight: 100;
+    font-size: 0.8em;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+.highlight .labels .label {
+    background: white !important
+}
+
+.highlight .labels * {
+    color: rgb(6, 169, 238) !important;
+}
+
+.highlight * {
+    color: white !important;
+}
+
+.image {
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center !important;
+}
+
+
+/* JS CLASSES */
+
+.show {
+    transition: all 0.2s ease !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.hide {
+    transition: all 0.2s ease !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.hidden {
+    visibility: hidden !important;
+}
+

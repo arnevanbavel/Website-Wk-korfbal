@@ -1,0 +1,721 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/* PAGE LAYOUT */
+html {
+    overflow-y: scroll;
+    font-family: helvetica, sans-serif;
+}
+
+body {
+    position: relative; 
+    overflow: hidden;
+}
+
+/* CLASSES */
+
+.page {
+    width: 100%;
+    background: #EEEEEE;
+}
+.pageContainer {
+    width: 900px;
+    margin: auto;
+    position: relative;
+}
+
+/* CLASSES HEADER */
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: 80px;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+.activeMenu {
+    background: white !important;
+}
+
+.menuHidden {
+    opacity: 0 !important;
+}
+
+.header:hover {
+    background: white;
+}
+
+.altHeader {
+    background: white;
+}
+
+.header .headerNavbar ul li * {
+    color: white;
+}
+
+.header:hover .headerNavbar ul li * {
+    color: black;
+}
+
+.activeMenu .headerNavbar ul li * {
+    color: black !important;
+}
+
+.altHeader .headerNavbar ul li * {
+    color: black !important;
+}
+
+.header .headerNavbar ul li.extraMenu a {
+    padding-right: 20px;
+}
+
+.header .headerLogo {
+    position: absolute;
+    top: 0px;
+    left: calc((100% - 900px) * 0.5);
+    width: 100%;
+}
+
+.header .headerLogo img {
+    height: 80px;
+}
+
+.header .headerNavbar {
+    width: 100%;
+    margin-top: 32px;
+    margin-right: calc((100% - 900px) * 0.5);
+    float: right;
+}
+
+.header .headerNavbar ul {
+    float: right;
+}
+
+.header .headerNavbar ul li {
+    float: left;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.header .headerNavbar ul li a {
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.header .headerNavbar ul li .navBarContent {
+    width: calc(100vw - 80px);
+    position: absolute;
+    height: 300px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    top: 80px;
+    left: 0;
+    opacity: 0;
+    background: white;
+    transition: 0.4s all ease-out;
+    padding: 40px;
+    visibility: hidden;
+}   
+
+.header .headerNavbar ul li .navBarContent * {
+    transition: 0.2s all linear;
+    opacity: 0;
+}
+
+.header .headerNavbar ul li .show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header .headerNavbar ul li .show * {
+    opacity: 1;
+}
+
+div.iconcontainer {
+    position: relative;
+}
+
+i {
+    color: black;
+    transition: 0.2s all linear;
+}
+
+i.iconMenu {
+    position: absolute;
+    top: -14px;
+    right: 0px;
+    font-size: 0.8em;
+}
+
+i.iconClose {
+    position: absolute;
+    top: -13px;
+    right: 2px;
+    opacity: 0;
+    font-size: 0.8em;
+}
+
+div.altMenuContainer {
+    width: 100%;
+    position: relative;
+    display: none;
+}
+
+div.altMenuContainer i.burgerIcon {
+    position: absolute;
+    color: white;
+    top: 0;
+    right: 0;
+    font-size: 1.85em;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    z-index: 1;
+    padding: 25px 40px;
+}
+
+div.header:hover div.altMenuContainer i.burgerIcon {
+    color: black;
+    background: white;
+}
+
+div.altHeader div.altMenuContainer i.burgerIcon {
+    color: black;
+    background: white;
+}
+
+div.activeMenu div.altMenuContainer i.burgerIcon {
+    color: black;
+}
+
+.altMenuContainer .altMenuContent {
+    width: calc(100vw - 80px);
+    position: absolute;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    top: 80px;
+    left: 0;
+    opacity: 0;
+    background: white;
+    transition: 0.4s all ease-out;
+    padding: 40px;
+    visibility: hidden;
+}
+
+.altMenuContainer .show {
+    visibility: visible;
+    opacity: 1;
+}
+
+div.altMenuContainer > div.altMenuContent > ul.altMenuLevel1 > li {
+    margin-top: 20px;
+}
+
+div.altMenuContainer > div.altMenuContent > ul.altMenuLevel1 > li:first-child {
+    margin-top: 0;
+}
+
+div.altMenuContainer > div.altMenuContent > ul.altMenuLevel1 > li > a {
+    border-bottom: 1px solid #333333;
+}
+
+div.altMenuContainer > div.altMenuContent > ul.altMenuLevel1 > li > a:last-child {
+    border-bottom: none;
+}
+
+div.altMenuContainer div.altMenuContent ul.altMenuLevel1 li a {
+    display: block;
+    line-height: 30px;
+}
+
+div.altMenuContainer div.altMenuContent ul.altMenuLevel1 li ul.altMenuLevel2 {
+    padding-left: 40px;
+}
+
+/* FOOTER CLASSES */
+
+.footer {
+    background: #373737;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.footer .columnContainer {
+    display: inline-block;
+    width: 100%;
+}
+
+.footer .columnContainer .column {
+    width: calc(25% - 15px);
+    float: left;
+    display: inline-block;
+    color: white;
+    font-weight: 100;
+    margin-right: 20px;
+}
+
+.footer .columnContainer .column:last-child {
+    margin-right: 0;
+}
+
+.footer .columnContainer .column a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .columnContainer .column ul {
+    padding-left: 20px;
+    border-left: 1px solid gray;
+}
+
+.footer .columnContainer .column ul li {
+    line-height: 20px;
+}
+/* MAIN CLASSES */
+
+.bCBContainer {
+    width: 100%;
+    display: inline-block;;
+}
+
+.bCBContainer .bigContentBox {
+    float: left;
+    display: inline-block;
+    height: 320px;
+}
+
+.bCBContainer .leftBox {
+    width: 50%;
+    background: #5564FF;
+}
+
+.bCBContainer .leftBox .bCBContent {
+    width: 430px;
+    float: right;
+    margin: 20px 20px 20px 0px;
+    height: calc(100% - 40px);
+}
+
+.bCBContainer .leftBox .bCBContent * {
+    color: white;
+    font-weight: 100;
+}
+
+.bCBContainer .leftBox .bCBContent h1 {
+    font-size: 1.7em;
+    margin-top: 20px;
+}
+
+.bCBContainer .leftBox .bCBContent h2 {
+    font-size: 1.2em;
+}
+
+.bCBContainer .leftBox .bCBContent p {
+    font-size: 1.1em;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.bCBContainer .leftBox .bCBContent input {
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 0%;
+    background: white;
+    border: none;
+    margin-top: 20px;
+    color: black;
+}
+
+.bCBContainer .rightBox {
+    width: 50%;
+    background: white;
+}
+
+.bCBContainer .rightBox .bCBContent {
+    width: 430px;
+    height: calc(100% - 40px);
+    float: left;
+    margin: 20px 0px 20px 20px;
+}
+
+.bCBContainer .rightBox .bCBContent .matchbox {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.bCBContainer > .rightBox > .bCBContent > .matchbox:last-child {
+    margin-bottom: 0;
+}
+
+.bCBContainer > .rightBox > .bCBContent > .matchbox > img {
+    width: 57px;
+    position: absolute;
+    top: 0;
+}
+
+.bCBContainer > .rightBox > .bCBContent > .matchbox > img:first-child {
+    left: 0;
+}
+
+.bCBContainer > .rightBox > .bCBContent > .matchbox > img:last-child {
+    right: 0;
+}
+
+.bCBContainer > .rightBox > .bCBContent > .matchbox > h1 {
+    width: 10%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.5em;
+    display: inline-block;
+    float: left;
+}
+
+.bCBContainer > .rightBox > .bCBContent > .matchbox > h2 {
+    line-height: 40px;
+    width: calc(45% - 57px);
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+.bCBContainer > .rightBox > .bCBContent > .matchbox > h2.leftScore {
+    margin-left: 57px;
+}
+
+.bCBContainer > .rightBox > .bCBContent > .matchbox > h2.rightScore {
+    margin-right: 57px;
+}
+
+.sCBContainer {
+    width: 100%;
+    display: inline-block;
+}
+
+.sCBContainer .smallContentBox {
+    float: left;
+    display: inline-block;
+    width: calc(25% - 15px);
+    margin-right: 20px;
+    margin-top: 20px; 
+    background: white;
+    padding-bottom: 20px;
+}
+
+.sCBContainer .smallContentBox img {
+    width: 100%;
+}
+
+.sCBContainer .smallContentBox h1 {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.sCBContainer .smallContentBox p {
+    margin-top: 20px;
+    padding: 0 20px;
+    font-size: 0.9em;
+}
+
+div.sCBContainer > div.smallContentBox:nth-child(4n+0) {
+    margin-right: 0px;
+}
+
+.flagContainer {
+    width: 100%;
+    display: inline-block;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.flagContainer .flag {
+    width: 12.5%;
+    float: left;
+    display: inline-block;
+}
+
+.flagContainer .flag img {
+    width: 100%;
+}
+
+/* MAIN SLIDER CLASSES */
+
+.mainSliderContainer {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.slidercontainer {
+    height: 100%;
+    width: 100%;
+}
+.slidercontainer .sliderviewport {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slidercontainer .sliderviewport .slider {
+    width: 1000%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0px;
+}
+
+.slidercontainer .sliderviewport .slider .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    float:left;
+    margin-left: 0;
+    position: relative;
+}
+
+div#slide1 {
+    background: url(../images/slide1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div#slide2 {
+    background: url(../images/slide2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div#slide3 {
+    background: url(../images/slide3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div#slide4 {
+    background: url(../images/slide4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.titleblock {
+    position: absolute;
+    bottom: 150px;
+    width: 100%;
+}
+
+.titleblock h1, .titleblock h3 {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.titleblock h1 {
+    font-weight: 400;
+    font-size: 3em;
+}
+
+.titleblock h3 {
+    font-weight: 300;
+    font-size: 1.5em;
+    margin-bottom: 12px;
+}
+
+.titleblock h3 span {
+    font-weight: 400;
+}
+
+div.bulletscontainer {
+    position: absolute;
+    width: 100px;
+    margin: 0 calc(50% - 50px);
+    bottom: 50px;
+}
+
+div.bulletscontainer ul {
+    width: 100%;
+}
+
+div.bulletscontainer ul li {
+    width: 25%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+div.bulletscontainer ul li.active > img:not(:first-child) {
+    display: inline-block !important;
+}
+
+div.bulletscontainer ul li.active img:first-child {
+    display: none !important;
+}
+
+div.bulletscontainer ul li a {
+    cursor: pointer;
+}
+
+div.bulletscontainer ul li img {
+    width: 12px;
+    margin: auto;
+    display: block;
+}
+
+div.bulletscontainer img:not(:first-child) {
+    display: none;
+}
+
+
+
+@media only screen 
+and (max-width: 1025px) {
+    .pageContainer {
+        width: calc(100% - 80px);
+        margin: 0 40px;
+    }
+    .header .headerNavbar {
+        display: none;
+    }
+    div.altMenuContainer {
+        display: block;
+    }
+    .header:hover {
+        background: transparent;
+    }
+    .activeMenu {
+        background: white !important;
+    }
+    .altHeader {
+        background: transparent;
+    }
+    .bCBContainer .leftBox {
+        width: calc(100% - 80px);
+        padding: 0 40px;
+    }
+    .bCBContainer .leftBox .bCBContent {
+        width: 100%;
+    }
+    .bCBContainer .rightBox {
+        width: calc(100% - 80px);
+        padding: 0 40px;
+    }
+    .bCBContainer .rightBox .bCBContent {
+        width: 100%;
+    }
+    .bCBContainer .leftBox .bCBContent {
+        margin: 20px 0px 20px 0px;
+    }
+    .bCBContainer .rightBox .bCBContent {
+        margin: 20px 0px 20px 0px;
+    }
+    .header .headerLogo {
+        left: 40px;
+    }
+
+
+}
+
+
+@media only screen 
+and (max-width: 850px) {
+    .sCBContainer .smallContentBox {
+        width: calc(50% - 10px);
+    }
+    div.sCBContainer > div.smallContentBox:nth-child(2n+0) {
+        margin-right: 0px;
+    }
+    .flagContainer .flag {
+        width: calc(25%);
+    }
+    div.flagContainer > div.flag:nth-child(4n+0) {
+        margin-right: 0px;
+    }
+    
+
+}
+
+@media only screen 
+and (max-width: 450px) {
+    .sCBContainer .smallContentBox {
+        width: 100%;
+    }
+    div.sCBContainer > div.smallContentBox:nth-child(1n+0) {
+        margin-right: 0px;
+    }
+    div.sCBContainer > div.smallContentBox:nth-child(2n+0) {
+        margin-right: 0px;
+    }
+    .flagContainer .flag {
+        width: 50%;
+    }
+    div.flagContainer > div.flag:nth-child(2n+0) {
+        margin-right: 0px;
+    }
+
+
+}
+

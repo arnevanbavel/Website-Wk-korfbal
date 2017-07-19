@@ -1,0 +1,91 @@
+@media only screen 
+and (max-width: 1025px) {
+    .pageContainer {
+        width: calc(100% - 80px);
+        padding: 0px 40px;
+    }
+    .footer .footerContainer {
+        width: calc(100% - 80px);
+        padding: 0 40px;
+    }
+    .header .headerNavbar {
+        display: none;
+    }
+    div.altMenuContainer {
+        display: block;
+    }
+    .header:hover {
+        background: transparent;
+    }
+    .activeMenu {
+        background: transparent !important;
+        opacity: 1 !important;
+    }
+    .altHeader {
+        background: transparent;
+    }
+    .bCBContainer .leftBox {
+        width: calc(100% - 80px);
+        padding: 0 40px;
+    }
+    .bCBContainer .leftBox .bCBContent {
+        width: 100%;
+    }
+    .bCBContainer .rightBox {
+        width: calc(100% - 80px);
+        padding: 0 40px;
+    }
+    .bCBContainer .rightBox .bCBContent {
+        width: 100%;
+    }
+    .bCBContainer .leftBox .bCBContent {
+        margin: 20px 0px 20px 0px;
+    }
+    .bCBContainer .rightBox .bCBContent {
+        margin: 20px 0px 20px 0px;
+    }
+    .header .headerLogo {
+        left: 40px;
+    }
+    div.individualContainer .leftContainer {
+        padding: 20px;
+        width: calc(100% - 40px);
+        border-bottom: 5px solid #EBEBEB;
+    }
+    div.individualContainer .rightContainer {
+        width: 100%;
+        border: none;
+        text-align: center;
+    }
+    .teamsContainer .image {
+        height: 11.5vw;
+    }
+
+    /* JS CLASSES */
+
+    .menuSlide {
+        transition: all 0.2s ease-out !important;
+        left: -260px;
+    }
+
+    .menuSlide .altMenu {
+        transition: all 0.2s ease-out !important;
+        left: calc(100% - 260px);
+    }
+
+    .menuReverse {
+        transition: all 0.2s ease-out !important;
+        left: 0px !important;
+    }
+
+    .slideMenuDeeper {
+        left: calc(100% - 520px) !important;
+    }
+
+    .menuReverse .altMenu {
+        transition: all 0.2s ease-out !important;
+        left: 100% !important;
+    }
+
+
+}

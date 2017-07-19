@@ -1,0 +1,278 @@
+fileFormatVersion: 2
+guid: 8fb896f0edf36c341ba9659f0ffe8d47
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: coin_spritesheet_64x64_0
+    21300002: coin_spritesheet_64x64_1
+    21300004: coin_spritesheet_64x64_2
+    21300006: coin_spritesheet_64x64_3
+    21300008: coin_spritesheet_64x64_4
+    21300010: coin_spritesheet_64x64_5
+    21300012: coin_spritesheet_64x64_6
+    21300014: coin_spritesheet_64x64_7
+    21300016: coin_spritesheet_64x64_8
+    21300018: coin_spritesheet_64x64_9
+    21300020: coin_spritesheet_64x64_10
+    21300022: coin_spritesheet_64x64_11
+    21300024: coin_spritesheet_64x64_12
+    21300026: coin_spritesheet_64x64_13
+    21300028: coin_spritesheet_64x64_14
+    21300030: coin_spritesheet_64x64_15
+    21300032: coin_spritesheet_64x64_16
+    21300034: coin_spritesheet_64x64_17
+    21300036: coin_spritesheet_64x64_18
+    21300038: coin_spritesheet_64x64_19
+    21300040: coin_spritesheet_64x64_20
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: coin_spritesheet_64x64_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin_spritesheet_64x64_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 7
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin_spritesheet_64x64_2
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 10
+        width: 67
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin_spritesheet_64x64_3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 15
+        width: 67
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin_spritesheet_64x64_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 17
+        width: 66
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin_spritesheet_64x64_5
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 23
+        width: 66
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin_spritesheet_64x64_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 28
+        width: 66
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin_spritesheet_64x64_7
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 23
+        width: 67
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin_spritesheet_64x64_8
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 17
+        width: 67
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin_spritesheet_64x64_9
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 15
+        width: 67
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin_spritesheet_64x64_10
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 10
+        width: 67
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin_spritesheet_64x64_11
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 7
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin_spritesheet_64x64_12
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 29
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin_spritesheet_64x64_13
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 26
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin_spritesheet_64x64_14
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 21
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin_spritesheet_64x64_15
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 17
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin_spritesheet_64x64_16
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 12
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin_spritesheet_64x64_17
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 7
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin_spritesheet_64x64_18
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 4
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin_spritesheet_64x64_19
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 4
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coin_spritesheet_64x64_20
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 4
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -1,0 +1,1488 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+p {
+    line-height: 25px;
+}
+
+
+
+
+
+/* PAGE LAYOUT */
+html {
+    overflow-y: scroll;
+    font-family: Ubuntu, sans-serif;
+}
+
+body {
+    position: relative; 
+    overflow: hidden;
+}
+
+/* CLASSES */
+
+.page {
+    width: 100%;
+    background: #EBEBEB;
+    position: relative;
+    left: 0px;
+    z-index: 2;
+}
+.pageContainer {
+    width: 900px;
+    margin: auto;
+    position: relative;
+    background: #EBEBEB;
+}
+
+/* CLASSES HEADER */
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 80px;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+.activeMenu {
+    background: white !important;
+    opacity: 1;
+}
+
+.menuHidden {
+    opacity: 0;
+}
+
+.header:hover {
+    background: white;
+}
+
+.altHeader {
+    background: white;
+}
+
+div.individualContainer {
+    background: white;
+    display: inline-block;
+    width: 100%;
+}
+
+div.individualContainer .container {
+    float: left;
+}
+
+div.individualContainer .leftContainer {
+    padding: 20px;
+    width: calc(50% - 42.5px);
+}
+
+div.individualContainer .leftContainer h1 {
+    font-size: 2em;
+    width: 100%;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+div.individualContainer .leftContainer p {
+    font-size: 1.1em;
+    width: 100%;
+    font-weight: 100;
+}
+
+div.individualContainer .rightContainer {
+    border-left: 5px solid #EBEBEB;
+    width: calc(50% - 2.5px);
+}
+
+div.individualContainer .rightContainer img {
+    width: 100%;
+}
+
+div.blockTitle {
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 120px;
+    background: white;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 100;
+    display: inline-block;
+}
+
+.blockTitle a {
+    font-size: 1.5em;
+    color: black;
+    transition: color 0.5s ease;
+    width: 100%;
+    font-weight: 500;
+}
+
+.blockTitle:hover a {
+    color: rgb(162, 162, 162);
+}
+
+.blockTitle h1 {
+    font-size: 1.5em;
+    color: black;
+}
+
+.span4Container {
+    width: 100%;
+    display: inline-block;
+}
+
+.span4 {
+    float: left;
+    display: inline-block;
+    width: calc(25% - 15px);
+    margin-right: 20px;
+    margin-bottom: 20px; 
+    background: white;
+}
+
+div.span4Container > div.span4:nth-child(4n+0) {
+    margin-right: 0px;
+}
+
+.span2Container {
+    width: 100%;
+    display: inline-block;
+}
+
+.span2 {
+    float: left;
+    display: inline-block;
+    width: calc(50% - 10px);
+    margin-right: 20px;
+    margin-bottom: 20px; 
+    background: white;
+}
+
+div.span2Container > div.span2:nth-child(2n+0) {
+    margin-right: 0px;
+}
+
+.header .headerNavbar ul li * {
+    color: white;
+}
+
+.header:hover .headerNavbar ul li * {
+    color: black;
+}
+
+.activeMenu .headerNavbar ul li * {
+    color: black !important;
+}
+
+.altHeader .headerNavbar ul li * {
+    color: black !important;
+}
+
+.header:hover .headerNavbar ul li div i {
+    color: rgb(182, 182, 182) !important;
+}
+
+.activeMenu .headerNavbar ul li div i {
+    color: rgb(182, 182, 182) !important;
+}
+
+.altHeader .headerNavbar ul li div i {
+    color: rgb(182, 182, 182) !important;
+}
+
+.header:hover .headerNavbar ul li div i.searchIcon {
+    color: black !important;
+}
+
+.activeMenu .headerNavbar ul li div i.searchIcon {
+    color: black !important;
+}
+
+.altHeader .headerNavbar ul li div i.searchIcon {
+    color: black !important;
+}
+
+.header:hover .headerNavbar ul li div i.searchClose {
+    color: black !important;
+}
+
+.activeMenu .headerNavbar ul li div i.searchClose {
+    color: black !important;
+}
+
+.altHeader .headerNavbar ul li div i.searchClose {
+    color: black !important;
+}
+
+.header > .headerNavbar > ul > li.extraMenu > a {
+    padding-right: 20px;
+}
+
+.header .headerLogo {
+    position: absolute;
+    top: 0px;
+    left: calc((100% - 900px) * 0.5);
+}
+
+.header .headerLogo img {
+    height: 80px;
+}
+
+.header .headerNavbar {
+    width: 100%;
+    margin-right: calc((100% - 900px) * 0.5);
+    float: right;
+}
+
+.header .headerNavbar ul {
+    float: right;
+}
+
+.header .headerNavbar ul li {
+    float: left;
+    display: inline-block;
+    margin-left: 40px;
+    min-width: 40px;
+    height: calc(100% - 32px);
+    padding-top: 32px;
+}
+
+.header .headerNavbar ul li a {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.header .headerNavbar ul li .navBarContent {
+    width: calc(100% - 80px);
+    position: absolute;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    top: 80px;
+    left: 0;
+    opacity: 0;
+    background: white;
+    transition: 0.4s all linear;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}   
+
+.header .headerNavbar ul li .navBarContent * {
+    transition: 0.4s all linear;
+    opacity: 0;
+}
+
+.navBarContent .mediaTopic {
+    width: calc(25% - 30px);
+    margin-right: 40px;
+    float: left;
+    display: inline-block;
+}
+
+.navBarContent > .mediaTopic:nth-child(4n+0) {
+    margin-right: 0;
+}
+
+.navBarContent .mediaTopic img {
+    width: 100%;
+}
+
+.navBarContent .mediaTopic h1 {
+    margin-top: 20px;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.navBarContent .mediaAllTab {
+    width: calc(100% + 80px);
+    padding-top: 40px;
+    border-top: 1px solid lightgray;
+    text-align: center;
+    margin-left: -40px;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.navBarContent .mediaAllTab h1 {
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 0px;
+}
+
+.navBarContent .competitionTopic {
+    width: calc(33.333% - 80px - 26.66667px);
+    float: left;
+    display: inline-block;
+    margin-right: 40px;
+    padding: 40px;
+}
+
+.navBarContent .competitionTopic:hover {
+    background: #EEEEEE;
+}
+
+div.navBarContent > div.competitionTopic:nth-child(3n+0) {
+    margin-right: 0;
+}
+
+.navBarContent .competitionTopic a img {
+    width: 10%;
+    padding-right: 20px;
+    display: inline-block;
+    float: left;
+}
+
+.navBarContent .competitionTopic a h1 {
+    display: inline-block;
+    width: calc(80% - 20px);
+    float: left;
+    font-size: 1.2em;
+    padding-bottom: 6px;
+}
+
+.navBarContent .competitionTopic a h2 {
+    display: inline-block;
+    width: calc(80% - 20px);
+    float: left;
+    font-size: 0.8em;
+}
+
+.navBarContent input {
+    font-size: 2.5em;
+    font-weight: 100;
+    border-radius: 0;
+    border: none;
+    background: #ffffff;
+    height: 100%;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    font-family: helvetica, sans-serif;
+}
+
+.navBarContent input:focus {
+  outline: none;
+}
+
+.header .headerNavbar ul li .show {
+    opacity: 1;
+}
+
+.header .headerNavbar ul li .show * {
+    opacity: 1;
+}
+
+.header .headerNavbar ul li .remove {
+    display: none;
+}
+
+div.iconcontainer {
+    position: relative;
+}
+
+i {
+    color: black;
+    transition: 0.2s all linear;
+}
+
+i.iconMenu {
+    position: absolute;
+    top: -14px;
+    right: 0px;
+    font-size: 0.8em;
+}
+
+i.iconClose {
+    position: absolute;
+    top: -13px;
+    right: 2px;
+    opacity: 0;
+    font-size: 0.8em;
+}
+
+i.searchIcon {
+    position: absolute;
+    top: -1px;
+    right: 0px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+i.searchClose {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 1em;
+    cursor: pointer;
+    opacity: 0;
+}
+
+/* Alternative Menu Classes */
+
+div.altMenu {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 520px;
+    height: 100vh;
+    background: rgb(40, 40, 40);
+    z-index: -1;
+}
+
+div.altMenu > div.mainMenu {
+    left: 0;
+    width: 260px;
+}
+
+div.altMenu > div.subMenu {
+    right: -15px;
+    display: none;
+    visibility: hidden;
+    overflow-y: scroll;
+    width: 275px;
+}
+
+div.altMenu > div.activeSubMenu {
+    display: block !important;
+    visibility: visible !important;
+}
+
+div.altMenu > div {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+}
+
+div.altMenu > div > ul > li {
+    padding: 20px 40px;
+    font-weight: 100;
+    line-height: 40px;
+    color: white;
+    border-bottom: 1px solid rgb(51, 51, 51);
+    position: relative;
+    cursor: pointer;
+}
+
+div.altMenu > div > ul > li.subMenuAllTab {
+    background: rgb(53, 53, 53);
+}
+
+div.altMenu > div > ul > li.altMenuBack {
+    padding: 20px;
+    padding-left: 40px;
+    background: rgb(53, 53, 53);
+}
+
+div.altMenu > div > ul > li > a {
+    color: white;
+}
+
+div.altMenu > div > ul > li > i.altMenuArrow {
+    position: absolute;
+    top: 29px;
+    right: 40px;
+    color: rgb(80, 80, 80);
+    z-index: 9;
+    font-size: 1.4em;
+}
+
+div.altMenu > div > ul > li > i.altMenuBackArrow {
+    position: absolute;
+    top: 27px;
+    left: 20px;
+    color: rgb(150, 150, 150);
+    z-index: 9;
+    font-size: 1.4em;
+}
+
+div.altMenuContainer {
+    width: 100%;
+    position: relative;
+    display: none;
+}
+
+div.altMenuContainer i.burgerIcon {
+    position: absolute;
+    color: white;
+    top: 0;
+    right: 40px;
+    font-size: 1.85em;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    z-index: 1;
+    padding: 25px 40px;
+    opacity: 1;
+}
+
+div.altMenuContainer i.burgerClose {
+    position: absolute;
+    color: white;
+    top: 0;
+    right: 40px;
+    font-size: 1.85em;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    z-index: 1;
+    padding: 25px 41px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+div.header:hover div.altMenuContainer i.burgerIcon {
+    color: black;
+    background: white;
+}
+
+div.altHeader div.altMenuContainer i.burgerIcon {
+    color: black;
+    background: white;
+}
+
+div.activeMenu div.altMenuContainer i.burgerIcon {
+    color: black;
+    background: white;
+}
+
+div.header:hover div.altMenuContainer i.burgerClose {
+    color: black;
+    background: white;
+}
+
+div.altHeader div.altMenuContainer i.burgerClose {
+    color: black;
+    background: white;
+}
+
+div.activeMenu div.altMenuContainer i.burgerClose {
+    color: black;
+    background: white;
+    opacity: 1 !important;
+}
+
+
+/* FOOTER CLASSES */
+
+.footer {
+    background: #373737;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.footer .footerContainer {
+    width: 900px;
+    margin: auto;
+    position: relative;
+}
+
+.footer .columnContainer {
+    display: inline-block;
+    width: 100%;
+}
+
+.footer .columnContainer .column {
+    width: calc(25% - 15px - 40px);
+    float: left;
+    display: inline-block;
+    color: white;
+    font-weight: 100;
+    padding: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    background-color: rgb(52, 52, 52);
+    min-height: 55px;
+}
+
+.footer .columnContainer .column:last-child {
+    width: calc(25% - 15px);
+    padding: 0;
+    background: transparent;
+}
+
+.footer .columnContainer .column:last-child {
+    margin-right: 0;
+}
+
+.footer .columnContainer .column img {
+    width: 100%;
+}
+
+.footer .columnContainer .column a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .columnContainer .column ul {
+
+}
+
+.footer .columnContainer .column ul li {
+    line-height: 20px;
+}
+
+.footer .columnContainer .column ul li:first-child {
+    margin-bottom: 15px;
+}
+
+/* MAIN CLASSES */
+
+.bCBContainer {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.bCBContainer .bigContentBox {
+    float: left;
+    display: inline-block;
+    height: 320px;
+}
+
+.bCBContainer .leftBox {
+    width: 50%;
+    background: #7C7D8F;
+}
+
+.bCBContainer .leftBox .bCBContent {
+    width: 430px;
+    float: right;
+    margin: 20px 20px 20px 0px;
+    height: calc(100% - 40px);
+}
+
+.bCBContainer .leftBox .bCBContent * {
+    color: white;
+    font-weight: 100;
+}
+
+.bCBContainer .leftBox .bCBContent h1 {
+    font-size: 1.7em;
+    margin-top: 20px;
+}
+
+.bCBContainer .leftBox .bCBContent h2 {
+    font-size: 1.2em;
+}
+
+.bCBContainer .leftBox .bCBContent p {
+    font-size: 1.1em;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.bCBContainer .rightBox {
+    width: 50%;
+    background: white;
+}
+
+.bCBContainer .rightBox .bCBContent {
+    width: 430px;
+    height: calc(100% - 40px);
+    float: left;
+    margin: 20px 0px 20px 20px;
+}
+
+.bCBContainer .rightBox .bCBContent .matchbox {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.bCBContainer > .rightBox > .bCBContent > .matchbox:last-child {
+    margin-bottom: 0;
+}
+
+.bCBContainer > .rightBox > .bCBContent > .matchbox > img {
+    width: 80px;
+    position: absolute;
+    top: 0;
+    border: 1px solid #EBEBEB;
+}
+
+.bCBContainer > .rightBox > .bCBContent > .matchbox > img:first-child {
+    left: 0;
+}
+
+.bCBContainer > .rightBox > .bCBContent > .matchbox > img:last-child {
+    right: 0;
+}
+
+.bCBContainer > .rightBox > .bCBContent > .matchbox > h1 {
+    width: 10%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.5em;
+    display: inline-block;
+    float: left;
+}
+
+.bCBContainer > .rightBox > .bCBContent > .matchbox > h2 {
+    line-height: 40px;
+    width: calc(45% - 57px);
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+.bCBContainer > .rightBox > .bCBContent > .matchbox > h2.leftScore {
+    margin-left: 57px;
+}
+
+.bCBContainer > .rightBox > .bCBContent > .matchbox > h2.rightScore {
+    margin-right: 57px;
+}
+
+.newsHomepage img {
+    width: 100%;
+    border-bottom: 5px solid #EBEBEB;
+}
+
+.newsHomepage h1 {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.newsHomepage p {
+    margin-top: 20px;
+    padding: 0 20px;
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+.newsHomepage a {
+    margin-top: 20px;
+    padding: 0 20px;
+    font-size: 0.9em;
+    font-weight: 100;
+    padding-bottom: 20px;
+    display: block;
+}
+
+
+.flagContainer {
+    width: 100%;
+    display: inline-block;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.flagContainer .flag {
+    width: 12.5%;
+    float: left;
+    display: inline-block;
+}
+
+.flagContainer .flag img {
+    width: calc(100% - 2px);
+    border: 1px solid #EBEBEB;
+}
+
+/* CSS About page */
+
+.aboutContainer {
+    width: 100%;
+    padding: 0px 0 40px;
+}
+
+.aboutContainer * {
+    display: inline-block;
+    font-weight: 100;
+}
+
+.aboutContainer div {
+    padding: 20px;
+    width: calc(100% - 40px);
+    background: white;
+}
+
+.aboutContainer > div > h1 {
+    font-size: 2em;
+    width: 100%;
+    font-weight: 400;
+}
+
+.aboutContainer > div > h2 {
+    font-size: 1.5em;
+    width: 100%;
+    font-weight: 400;
+}
+
+.aboutContainer > div > p {
+    font-size: 1.1em;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.aboutContainer > ul {
+    width: calc(25% - 40px);
+    padding: 40px 20px;
+    display: inline-block;
+    float: left;
+    margin-top: 40px;
+    background: white;
+    margin-bottom: 40px;
+}
+
+.aboutContainer > ul > li {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.aboutContainer > ul > li:first-child {
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+/* CSS Media overview page */
+
+.mediaContainer {
+    width: 100%;
+    padding: 0px 0 20px;
+}
+
+.mediaContainer img {
+    width: 100%;
+    border-bottom: 5px solid #EBEBEB;
+}
+
+.mediaContainer > div > div > h1 {
+    padding: 20px;
+    font-size: 1em;
+    font-weight: 400;
+} 
+
+/* CSS Media Individual page */
+
+.mediaIndContainer {
+    width: 100%;
+    padding: 0px 0 40px;
+}
+
+.mediaIndContainer .otherContainer {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.mediaIndContainer > div > div > div > a > img {
+    width: 100%;
+    border-bottom: 5px solid #EBEBEB;
+}
+
+.mediaIndContainer > div > div > div > h1 {
+    padding: 20px;
+    font-size: 1em;
+    font-weight: 400;
+} 
+
+/* CSS News Overview page */
+
+.newsContainer {
+    width: 100%;
+    padding: 0px 0 20px;
+}
+
+/* CSS News Individual page */
+
+.newsIndContainer {
+    width: 100%;
+    padding: 0px 0 20px;
+}
+
+.newsIndContainer > div {
+    width: 100%;
+    display: inline-block;
+}
+
+.newsIndContainer .otherContainer {
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* CSS Teams overview page */
+
+.teamsContainer {
+    padding-bottom: 20px;
+}
+
+.teamsContainer div {
+    display: inline-block;
+}
+
+.teamsContainer > div > div > h1 {
+    padding: 20px;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+} 
+
+.teamsContainer img {
+    width: 100%;
+    border-bottom: 5px solid #EBEBEB;
+}
+
+/* CSS Teams Individual page */
+
+.teamIndContainer {
+    width: 100%;
+    padding: 0px 0 40px;
+}
+
+.teamIndContainer ol {
+    width: 100%;
+}
+
+.teamIndContainer ol li {
+    width: 50%;
+    float: left;
+    display: inline-block;
+    line-height: 28px;
+    font-weight: 100;
+}
+
+.teamIndContainer .teamPhotoContainer {
+    width: 100%;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.teamIndContainer .teamPhotoContainer img {
+    width: 100%;
+}
+
+/* CSS Schedule Page */
+
+.scheduleOptionsContainer {
+    margin-bottom: 40px;
+}
+
+.scheduleOptionsContainer > div {
+    margin-bottom: 0;
+}
+
+.scheduleOptionsContainer div a {
+    display: block;
+    width: calc(100% - 40px);
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: 1.2em;
+    transition: color 0.5s ease;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.scheduleOptionsContainer div:hover a {
+    color: rgb(162, 162, 162);
+}
+
+.scheduleOptionsContainer div select {
+    width: calc(100% - 40px);
+    padding: 20px;
+    background-color: white;
+    border: none;
+    font-size: 1.2em;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    margin-left: 20px;
+    font-family: Ubuntu;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+.scheduleOptionsContainer div select:focus {
+  outline: none;
+}
+
+.eventsContainer {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.eventsContainer .event {
+    width: 100%;    
+    margin-bottom: 20px;
+    
+}
+
+.eventsContainer > .event:last-child {
+    margin-bottom: 0;
+}
+
+.eventsContainer .event .eventTitle {
+    width: calc(100% - 40px);
+    position: relative;
+    padding: 20px;
+    background: white;
+    border-bottom: 5px solid #EBEBEB;
+}
+
+.eventsContainer .event .eventTitle h1, .eventsContainer .event .eventTitle h2 {
+    text-align: center;
+    display: block;
+}
+
+.eventsContainer .event .eventTitle h1 {
+    font-size: 1.2em;
+    font-weight: 400;
+    position: absolute;
+    top: 30px;
+}
+
+.eventsContainer > .event > .eventTitle > h1.leftTeam {
+    left: 20px;
+}
+
+.eventsContainer > .event > .eventTitle > h1.rightTeam {
+    right: 20px;
+}
+
+.eventsContainer .event .eventTitle h2 {
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.eventsContainer > .event > .eventTitle > h2:last-child {
+    margin-top: 5px;
+}
+
+.eventsContainer .event .eventContent {
+    width: calc(100% - 40px);
+    position: relative;
+    padding: 20px;
+    height: 90px;
+    background: white;
+}
+
+.eventsContainer .event .eventContent img {
+    height: 90px;
+    position: absolute;
+    top: 20px;
+    border: 1px solid #EBEBEB;
+}
+
+.eventsContainer > .event > .eventContent > img:first-child {
+    left: 20px;
+}
+
+.eventsContainer > .event > .eventContent > img:last-child {
+    right: 20px;
+}
+
+.eventsContainer .event .eventContent h1 {
+    width: 50px;
+    position: absolute;
+    left: calc(50% - 25px);
+    font-size: 1.5em;
+    text-align: center;
+    top: 55px;
+}
+
+.eventsContainer .event .eventContent h2 {
+    width: 50px;
+    position: absolute;
+    font-size: 2em;
+    text-align: center;
+    top: 50px;
+}
+
+.eventsContainer .event .eventContent h2.leftScore {
+    left: calc(31% - 25px + 20px);
+}
+
+.eventsContainer .event .eventContent h2.rightScore {
+    right: calc(31% - 25px + 20px);
+}
+
+.eventsContainer .event .eventContent h3 {
+    width: 500px;
+    position: absolute;
+    font-size: 1.2em;
+    text-align: center;
+    left: calc(50% - 250px);
+    font-weight: 100;
+}
+
+.eventsContainer .event .eventContent h3.place {
+    top: 20px;
+}
+
+.eventsContainer .event .eventContent h3.time {
+    bottom: 20px;
+}
+
+/* CSS Locations Page */
+
+.locationsContainer {
+    padding-bottom: 20px;
+}
+
+.locationsContainer .location {
+    margin-bottom: 20px;
+}
+
+.locationsContainer .location div.rightContainer {
+    height: 300px;
+}
+
+
+/* MAIN SLIDER CLASSES */
+
+.mainSliderContainer {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.slidercontainer {
+    height: 100%;
+    width: 100%;
+}
+.slidercontainer .sliderviewport {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slidercontainer .sliderviewport .slider {
+    width: 1000%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0px;
+}
+
+.slidercontainer .sliderviewport .slider .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    float:left;
+    margin-left: 0;
+    position: relative;
+}
+
+div#slide1 {
+    background: url(../images/slide1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div#slide2 {
+    background: url(../images/slide2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div#slide3 {
+    background: url(../images/slide3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div#slide4 {
+    background: url(../images/slide4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.titleblock {
+    position: absolute;
+    bottom: 150px;
+    width: 100%;
+}
+
+.titleblock h1, .titleblock h3 {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.titleblock h1 {
+    font-weight: 400;
+    font-size: 3em;
+}
+
+.titleblock h3 {
+    font-weight: 300;
+    font-size: 1.5em;
+    margin-bottom: 12px;
+}
+
+.titleblock h3 span {
+    font-weight: 400;
+}
+
+div.bulletscontainer {
+    position: absolute;
+    width: 100px;
+    margin: 0 calc(50% - 50px);
+    bottom: 50px;
+}
+
+div.bulletscontainer ul {
+    width: 100%;
+}
+
+div.bulletscontainer ul li {
+    width: 25%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+div.bulletscontainer ul li.active > img:not(:first-child) {
+    display: inline-block !important;
+}
+
+div.bulletscontainer ul li.active img:first-child {
+    display: none !important;
+}
+
+div.bulletscontainer ul li a {
+    cursor: pointer;
+}
+
+div.bulletscontainer ul li img {
+    width: 12px;
+    margin: auto;
+    display: block;
+}
+
+div.bulletscontainer img:not(:first-child) {
+    display: none;
+}
+
+/* JS CLASSES */
+
+.show {
+    transition: all 0.2s ease !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.hide {
+    transition: all 0.2s ease !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.hidden {
+    visibility: hidden !important;
+}
+
+
+
+@media only screen 
+and (max-width: 1025px) {
+    .pageContainer {
+        width: calc(100% - 80px);
+        padding: 0 40px;
+    }
+    .footer .footerContainer {
+        width: calc(100% - 80px);
+        padding: 0 40px;
+    }
+    .header .headerNavbar {
+        display: none;
+    }
+    div.altMenuContainer {
+        display: block;
+    }
+    .header:hover {
+        background: transparent;
+    }
+    .activeMenu {
+        background: transparent !important;
+        opacity: 1 !important;
+    }
+    .altHeader {
+        background: transparent;
+    }
+    .bCBContainer .leftBox {
+        width: calc(100% - 80px);
+        padding: 0 40px;
+    }
+    .bCBContainer .leftBox .bCBContent {
+        width: 100%;
+    }
+    .bCBContainer .rightBox {
+        width: calc(100% - 80px);
+        padding: 0 40px;
+    }
+    .bCBContainer .rightBox .bCBContent {
+        width: 100%;
+    }
+    .bCBContainer .leftBox .bCBContent {
+        margin: 20px 0px 20px 0px;
+    }
+    .bCBContainer .rightBox .bCBContent {
+        margin: 20px 0px 20px 0px;
+    }
+    .header .headerLogo {
+        left: 40px;
+    }
+    div.individualContainer .leftContainer {
+        padding: 20px;
+        width: calc(100% - 40px);
+        border-bottom: 5px solid #EBEBEB;
+    }
+    div.individualContainer .rightContainer {
+        width: 100%;
+        border: none;
+        text-align: center;
+    }
+    div.individualContainer .rightContainer img {
+        width: 100%;
+    }
+
+    /* JS CLASSES */
+
+    .menuSlide {
+        transition: all 0.2s ease-out !important;
+        left: -260px;
+    }
+
+    .menuSlide .altMenu {
+        transition: all 0.2s ease-out !important;
+        left: calc(100% - 260px);
+    }
+
+    .menuReverse {
+        transition: all 0.2s ease-out !important;
+        left: 0px !important;
+    }
+
+    .slideMenuDeeper {
+        left: calc(100% - 520px) !important;
+    }
+
+    .menuReverse .altMenu {
+        transition: all 0.2s ease-out !important;
+        left: 100% !important;
+    }
+
+
+}
+
+
+@media only screen 
+and (max-width: 850px) {
+    .span4Container .span4 {
+        width: calc(50% - 10px);
+    }
+    div.span4Container > div.span4:nth-child(2n+0) {
+        margin-right: 0px;
+    }
+    .flagContainer .flag {
+        width: calc(25%);
+    }
+    div.flagContainer > div.flag:nth-child(4n+0) {
+        margin-right: 0px;
+    }
+    
+
+}
+
+@media only screen 
+and (max-width: 600px) {
+    .footer .columnContainer .column {
+        width: calc(50% - 50px);
+    }
+    div.columnContainer > div.column:nth-child(2n+0) {
+        margin-right: 0px !important;
+    }
+    .footer .columnContainer .column:last-child {
+        width: calc(50% - 10px);
+    }
+}
+
+@media only screen 
+and (max-width: 450px) {
+    .span4Container .span4 {
+        width: 100%;
+    }
+    div.span4Container > div.span4:nth-child(1n+0) {
+        margin-right: 0px;
+    }
+    div.span4Container > div.span4:nth-child(2n+0) {
+        margin-right: 0px;
+    }
+    .flagContainer .flag {
+        width: 50%;
+    }
+    div.flagContainer > div.flag:nth-child(2n+0) {
+        margin-right: 0px;
+    }
+
+
+}
+

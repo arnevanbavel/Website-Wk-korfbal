@@ -1,0 +1,862 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body,html{
+	font-family: Roboto, sans-serif;
+	font-weight: 200;
+	font-size: 14px;
+	background-color: #ededed;
+	color: #4e505c;
+	width: 100%;
+	height: 100%;
+}
+
+.container{
+	width: 95%;
+	margin: 0 auto;
+}
+
+nav{
+	width: 100%;
+	height: 75px;
+	display: block;
+	position: relative;
+	z-index: 99;
+	font-size: 16px;
+	background-color: #3a79e2;
+}
+
+nav a#pull {
+	display: none;
+}
+
+
+
+nav .back{
+	float: left;
+	min-width: 20%;
+	margin-left: 20px;
+	min-height: 75px;
+	line-height: 75px;
+	font-size: 20px;
+	font-weight: 300;
+}
+nav .menu{
+	min-width: 25%;
+	float: right;
+}
+nav .logout{
+	width: 35%;
+	min-height: 75px;
+	text-align: center;
+	line-height: 75px;
+	float: right;
+	background-color: #333F48;
+}
+
+
+nav input{
+	font-family: Roboto, sans-serif;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: #3e586a;
+    height: 75px;
+    font-size: 16px;
+    font-weight: 100;
+	width: calc(65% - 20px);
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+	outline: none;
+	padding-left: 20px;
+}
+
+nav .links{
+	width: 45%;
+	float: left;
+}
+nav .links ul{
+	float: right;
+	list-style-type:none;
+}
+nav .links ul li{
+	float: left;
+	margin: 29px 10px 0px 10px;
+}
+
+nav .links .active{
+	border-bottom: 1px #FFF solid;
+}
+
+nav a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+#search-results{
+	position: absolute;
+	right: 0px;
+	width: 25%;
+	display: block;
+	background-color: #3e586a;
+	color: black;
+	z-index: 99;
+}
+#search-results a{
+	color: red;
+	margin: 0;
+	padding: 0;
+}
+
+.searchDiv{
+	padding: 20px;
+}
+
+/* DASHBOARD */
+.sidebar{
+	width: 25%;
+	display: block;
+	float: right;
+	overflow: scroll;
+	height: calc(100% - 75px); /* 100% - navigatiebalk */
+}
+
+.data-container{
+	background-color: #FFF;
+	width: 75%;
+	display: block;
+	float: left;
+	height: calc(100% - 75px); /* 100% - navigatiebalk */
+}
+
+.message-list{
+	width: 30%;
+	min-height: 100%;
+	max-height: 100%;
+	display: block;
+	float: left;
+	overflow: scroll;
+	background-color: #ededed;
+}
+
+.message-list a{
+	text-decoration: none;
+	color: #4e505c;
+}
+
+.message-list .item{
+	border-bottom: 1px #e1e1e3 solid;
+	max-width: 100%;
+	min-height: 75px;
+	display: block;
+	padding: 20px
+}
+
+.message-list .item:hover{
+	opacity: 0.5;
+}
+
+.message-list .item .avatar{
+	width: 25%;
+	float: left;
+	min-height: 75px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.message-list .item .avatar .sender-avatar{
+	float: left;
+	width: 60px;
+	height: 60px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	z-index: 1;
+}
+
+.message-list .item .information{
+	width: 68%;
+	float: right;
+	min-height: 75px;
+}
+
+.message-list .item .information h3{
+	font-weight: 400;
+	padding: 20px 0px 0px 0px;
+	margin: 0;
+}
+
+.message-list .item .information small{
+	color: #a2a5ac;
+}
+
+.message-list .item .date{
+	float: right;
+	margin-top: -15px;
+}
+
+.important-message{
+	border-left: 5px solid #ee5151;
+}
+
+.selected-message{
+	background-color: #FFF;
+}
+
+.message-box{
+	position: relative;
+	width: 70%;
+	min-height: 100%;
+	max-height: 100%;
+	float: right;
+	overflow: scroll;
+	background-color: #FFF;
+}
+
+.create-message{
+	position: absolute;
+	margin: 10px;
+	right: 0;
+	background-color: blue;
+	padding: 20px;
+  	-webkit-border-radius: 50px;
+  	-moz-border-radius: 50px;
+  	border-radius: 50px;
+  	color: #FFF;
+}
+
+.message-box .message-content .imagepreview{
+	margin: 10px 0px;
+}
+
+.message-box .message-content{
+	padding: 50px 50px 0px 50px;
+}
+
+.message-box .message-content .header{
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+}
+
+.message-box .message-content h3{
+	margin-bottom: 5px;
+	font-weight: 400;
+}
+
+.message-box .message-content p{
+	width: 100%;
+	margin: 20px 0px;
+	padding: 20px 0px;
+	border-top: 1px solid #e1e1e3;
+	border-bottom: 1px solid #e1e1e3;
+}
+
+.message-box .message-content img{
+	width: 100%;
+}
+
+.message-box .message-content .leftside{
+	float: left;
+	width: calc(50% - 1px);
+	height: 40px;
+	border-right:1px solid #e1e1e3;
+}
+.message-box .message-content .leftside .sender-avatar{
+	float: left;
+	width: 40px;
+	height: 40px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	margin-right: 20px;
+}
+
+.message-box .message-content .rightside{
+	padding-left: 20px;
+	float: right;
+	width: calc(50% - 20px);
+	height: 50px;
+}
+
+.message-box .message-content .formulier h2{
+	margin-bottom: 20px;
+}
+
+.message-box .message-content .formulier .sentto{
+	width: 100%;
+}
+
+.message-box .message-content .formulier .sentto select{
+	width: 30%;
+}
+
+.message-box .message-content .formulier .other input[type=text]{
+	width: 100%;
+	padding: 10px 0px;
+	margin: 10px 0px;
+}
+
+.message-box .message-content .formulier .other .checkbox{
+    margin: 10px 0px;
+}
+
+.message-box .message-content .formulier .other textarea{
+	width: 100%;
+}
+
+.message-box .message-content .formulier .other .button{
+	outline: none;
+	font-size: 12px;
+	background-color: blue;
+	border:none;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}	
+.sidebar .calendar{
+	padding: 0px 15px;
+}
+
+.sidebar .content{
+	border-bottom: 1px solid #e1e1e3;
+}
+
+.sidebar .event-item{
+	padding: 10px 0px;
+	width: 100%;
+	border-top: 1px solid #e1e1e3;
+	height: 50px;
+}
+
+.sidebar .event-item .information{
+	float: left;
+}
+
+.sidebar .event-item .information img{
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+	width: 40px;
+}
+
+.sidebar .event-item .date{
+	float: right;
+	margin-top:10px;
+	margin-right: 10px;
+}
+
+.filter{
+	position: relative;
+	font-size: 20px;
+	text-align: center;
+	border-bottom: 1px solid #e1e1e3;
+}
+
+.filter:hover{
+	background-color: blue;
+	color: white;
+}
+.filter select{
+	background-color: #1abc9c;
+	color: #fff;
+	width: 100%;
+	font-size: 16px;
+	min-height: 75px;
+	padding-left: 30px;
+	border: 0;
+	margin: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;    
+	outline: none;
+	border-radius: 0;
+
+}
+.create-event-button{
+	position: relative;
+	text-align: center;
+	padding: 20px 0px;
+}
+
+.create-event-button:hover{
+	background-color: blue;
+	color: white;
+}
+
+
+.add-button{
+	background-color: blue;
+	display: block;
+	font-size: 20px;
+	text-align: center;
+	padding: 20px 0px;
+	color: #FFF;
+	width: 100%;
+}
+
+.data-container .upper{
+	min-height: 250px;
+	max-height: 250px;
+	width: 100%;
+	color: #FFF;
+	background-color: #3e586a;
+}
+
+.data-container .upper .information{
+	float: left;
+	width: 35%;
+}
+
+.data-container .upper .information .team-name{
+	float: left;
+	padding: 20px 0px 0px 20px;
+	width: calc(100% - 20px);
+	min-height: 25px;
+	background-color: #3e586a;
+}
+.data-container .upper .information .team-name .flag{
+	height: 20px;
+	float: left;
+	margin-top:2px;
+	margin-right: 10px;
+}
+
+.data-container .upper .information .team-name h3{
+	margin: 0;
+	font-weight: 200;
+	font-size: 25px;
+}
+
+.data-container .upper .information .team-info{
+	float: left;
+	padding: 20px 20px 0px 20px;
+	line-height: 18px;
+}
+.data-container .upper .cover{
+	float: right;
+	width: 65%;
+	display:block;
+	background-color: yellow;
+	min-height: 250px;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.data-container .lower{
+	padding: 20px 20px 0px 20px;
+}
+
+.scroll{
+	overflow: scroll;
+}
+
+.team-list{
+	padding: 0px 15px;
+}
+
+.team-list ul li{
+	font-size: 16px;
+	list-style: none;
+	padding: 10px 0px;
+	border-top: 1px solid #e1e1e3;
+}
+
+.team-list .flag{
+	height: 20px;
+	float: left;
+	margin-top:9px;
+	margin-right: 10px;
+	margin-left: 5px;
+}
+.team-formulier{
+	width: 50%;
+	margin: 50px auto;
+}
+
+.team-formulier select{
+	width: 30%;
+}
+
+.team-formulier input[type=text]{
+	width: 100%;
+	padding: 10px 0px;
+	margin: 10px 0px;
+}
+
+.team-formulier .checkbox{
+    margin: 10px 0px;
+}
+
+.team-formulier .select{
+	width: 30%;
+}
+
+.team-formulier textarea{
+	width: 100%;
+}
+
+.team-formulier input[type=file]{
+	width: 100%;
+	padding: 10px 0px;
+	padding: 10px 0px;
+}
+
+.team-formulier .button{
+	float: left;
+	margin-right: 10px;
+	outline: none;
+	font-size: 12px;
+	background-color: blue;
+	border:none;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}	
+.news-container{
+	width: 60%;
+	margin: 50px auto;
+}
+.news-container h3{
+	font-weight: 400;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.news-item{
+	border-bottom: 1px solid #e1e1e3;
+	padding-bottom: 20px;
+}
+.news-item h2{
+	font-weight: 400;
+	margin-bottom: 5px;
+	margin-top: 30px;
+}
+.news-item p{
+	margin: 10px 0px;
+}
+.news-item .flag{
+	float: left;
+	height: 16px;
+	margin: 3px 10px 0px 0px
+}
+.sidebar .content{
+	padding: 20px;
+}
+.sidebar .content .teamtag{
+	margin: 10px 0px;
+}
+.sidebar .content .teamtag .flag{
+	height: 12px;
+	margin-right: 10px;
+}
+
+.sidebar .content h2{
+	margin-bottom: 10px;
+}
+
+.sidebar .content .tags{
+	margin: 10px 0px;
+}
+
+.sidebar .content .createtag{
+	margin: 10px 0px 30px 0px;
+}
+
+#create-tag{
+	outline: none;
+	font-size: 12px;
+	background-color: blue;
+	border:none;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.data-container .album{
+	float:left;
+	margin: 20px;
+	display: block;
+	width: calc(25% - 40px);
+}
+.data-container .album img{
+	width: 100%;
+}
+.data-container .album h1{
+	margin: 0;
+}
+
+.news-container .event-item{
+	padding: 10px 0px;
+	width: 100%;
+	border-top: 1px solid #e1e1e3;
+	height: 150px;
+}
+
+.news-container .event-item .information{
+	float: left;
+}
+
+.news-container .event-item .information img{
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+	width: 40px;
+}
+
+.news-container .event-item .date{
+	float: right;
+	margin-top:10px;
+	margin-right: 10px;
+}
+#error{
+	background-color: red;
+}
+#error li{
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	list-style: none;
+	text-align: center;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  padding: 10px 0.25rem;
+  text-align: left;
+}
+tbody tr:nth-child(odd) {
+  background: #eee;
+}
+
+.hidden{
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+}
+	.add-button-mobile{
+		background-color: blue;
+		display: block;
+		font-size: 20px;
+		text-align: center;
+		padding: 20px 0px;
+		color: #FFF;
+		width: 100%;
+		display: none;
+	}
+	.add-button-mobile-2{
+		float: left;
+		background-color: blue;
+		display: block;
+		font-size: 20px;
+		text-align: center;
+		padding: 20px 0px;
+		color: #FFF;
+		width: 50%;
+		display: none;
+		margin-bottom: 50px;
+	}
+
+#mediaform h3{
+	margin: 50px 0px;
+	font-size: 30px;
+	font-weight: 200;
+	text-align: center;
+}
+
+#mediaform h2{
+	margin: 10px 0px;
+	font-size: 20px;
+	font-weight: 200;
+}
+
+
+@media screen and (max-width: 900px) {
+
+	.add-button-mobile{
+		display: block;
+	}
+	.add-button-mobile-2{
+		display: block;
+	}
+	.data-container .upper .information{
+		float: left;
+		width: 100%;
+	}
+	.data-container .upper .cover{
+		float: right;
+		width: 100%;
+		display:block;
+		min-height: 250px;
+	  	-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: 50% 50%;
+	}
+
+    .sidebar{
+    	display: none;
+    }
+
+    .data-container{
+    	width: 100%;
+    	max-width: 100%;
+    }
+
+	nav .menu{
+		width: 100%;
+	}
+	nav .menu input{
+		width: calc(80% - 20px);
+	}
+	nav .menu .logout{
+		width: 20%;
+	}
+
+	nav .back{
+		width:5%;
+	}
+
+	nav .links{
+		width:70%;
+		float: right;
+		margin-right: 10px;
+	}
+
+	#search-results{
+	position: absolute;
+	top: 140px;
+	right: 0px;
+	width: 100%;
+	display: block;
+	background-color: #3e586a;
+	color: black;
+	z-index: 99;
+}
+
+}
+
+/*Smartphone*/
+@media screen and (max-width : 560px) {
+	.message-list .item .information{
+		display: none;
+	}
+	.data-container .album{
+		float:left;
+		margin: 20px;
+		display: block;
+		width: calc(100% - 40px);
+	}
+	.news-container{
+		width: 90%;
+		margin: 50px auto;	
+	}
+	.message-list{
+		width: 20%;
+		min-height: 100%;
+		max-height: 100%;
+		display: block;
+		float: left;
+		overflow: scroll;
+		background-color: #ededed;
+	}
+	.message-box .message-content{
+		padding: 5px;
+	}
+
+	nav .back{
+		width: 0px;
+	}
+
+	nav .links{
+		float: none;
+		width:100%;
+		margin-right: 0px;
+	}
+
+	nav {
+		border-bottom: 0;
+	}
+	nav ul {
+		float: none;
+		display: none;
+		height: auto;
+		background-color: #3a79e2;
+		width: 100%;
+		padding-bottom: 20px;
+		text-align: center;
+
+	}
+	nav a#pull {
+		display: block;
+		background-color: #3a79e2;
+		width: 100%;
+		position: absolute;
+		height: 75px;
+		text-align: center;
+		line-height: 75px;
+	}
+
+	nav .links li {
+		display: block;
+		float: none;
+		width: 100%;
+		z-index: 99;
+		margin: 10px 0px;
+		text-align: center;
+	}
+	nav .links li a {
+		border-bottom: 1px solid #576979;
+	}
+}
+

@@ -1,0 +1,35 @@
+@media only screen 
+and (max-width: 600px) {
+    .footer .columnContainer .column {
+        width: calc(50% - 50px);
+    }
+    div.columnContainer > div.column:nth-child(2n+0) {
+        margin-right: 0px !important;
+    }
+    .footer .columnContainer .column:last-child {
+        width: calc(50% - 10px);
+    }
+    .span4Container .span4 {
+        width: 100%;
+    }
+    .newsHomepage p {
+        height: 70px;
+    }
+    .teamsContainer .image {
+        height: 42.8vw;
+    }
+    .aboutContainer > ul {
+        width: calc(50% - 40px);
+    }
+    .ticketContainer .ticket .description {
+        width: 100%;
+    }
+    .ticketContainer .ticket .duration {
+        width: 50%;
+        padding-top: 20px;
+    }
+    .ticketContainer .ticket .price {
+        width: 50%;
+        padding-top: 20px;
+    }
+}

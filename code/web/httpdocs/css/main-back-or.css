@@ -1,0 +1,337 @@
+html,body,ul,li{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family: Roboto, sans-serif;
+	font-weight: 200;
+	background-color: #F5F5F5;
+}
+
+ul,li{
+	list-style-type:none;
+}
+
+ 
+nav{
+	display: block;
+	background-color: #0053a0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	width: 100%;
+}
+
+nav a{
+	color: #FFF;
+	font-weight: 300;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+nav .header{
+	width: 80%;
+	height: 20px;
+	padding: 50px;
+	margin: 0 auto;
+}
+
+nav .header .logo{
+	width: 50%;
+	float: left;
+}
+
+nav .header .logo img{
+	margin-top: -40px;
+	width: 100px;
+}
+
+nav .header .menu{
+	float: right;
+}
+
+nav .header .menu ul{
+	list-style-type:none;
+}
+
+nav .header .menu li{
+	float:left;
+	margin-left: 20px;
+}
+
+.navback{
+	width: 100%;
+	text-align: right;
+	margin: 20px 0px;
+}
+
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 200px;
+}
+
+.itemscontainer h2{
+	font-weight: 300;
+	font-size: 26px;
+	text-transform: uppercase;
+	margin: 35px 35px;
+	float: left;
+}
+
+.itemscontainer .item{
+	//margin: 35px 35px 35px -30px;
+	margin: 35px 35px;
+	border-bottom: 1px #F0F0F0 solid;
+	width: 85%;
+	clear: both;
+}
+
+.itemscontainer p{
+	margin-left: 80px;
+}
+
+.itemscontainer .item h3{
+	margin-top: 0px;
+	font-weight: 400;
+}
+
+.nieuws{
+	display: block;
+	background-color: #FFF;
+	width: 47.5%;
+	float: left;
+}
+
+.games{
+	display: block;
+	background-color: #FFF;
+	width: 47.5%;
+	float: right;
+}
+
+
+.formulier{
+	background-color: #fff;
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 200px;
+}
+
+.formulier form{
+	display: inline-block;
+	width: 100%;
+}
+
+.formulier h3{
+	text-align: center;
+	padding: 20px;
+}
+
+.formulier input{
+	display: inline-block;
+	width: calc(50% - 4px - 20px);
+	float: left;
+	border: 1px solid black;
+	margin-left: 20px;
+	margin-bottom: 40px;
+}
+
+.formulier label{
+	display: inline-block;
+	width: 25%;
+	float: left;
+	margin-right: 20px;
+	text-align: right;
+}
+
+.formulier textarea{
+	display: inline-block;
+	width: calc(50% - 6px - 20px);
+	float: left;
+	border: 1px solid black;
+	margin-left: 20px;
+	margin-bottom: 40px;
+}
+
+.formulier input:last-child{
+	width: 10%;
+  	margin-left: 45%;
+}
+
+.clearfix{
+	clear: both;
+}
+.calendar{
+	border-radius: 4px;
+	overflow: hidden;
+	width: ;
+	background-color: #ffffff;
+	color: #333333;
+}
+
+.calendar h1, .calendar h2{
+	font-weight: 300;
+	font-size: 26px;
+	text-transform: uppercase;
+	margin: 0px 0px 20px 10px;
+}
+
+
+
+.calendar .content{
+	margin: 25px 25px;
+}
+
+.calendar ul{
+	margin: 0px;
+	width: 100%;
+}
+
+.calendar ul li{
+	list-style: none;
+}
+
+
+.calendar .months li,
+.calendar .weekday li,
+.calendar .days li{
+	float: left;
+	text-transform: uppercase;
+	width: 14%;
+}
+
+.calendar .months li a,
+.calendar .weekday li a,
+.calendar .days li a{
+	display: block;
+	color: #747978;
+	text-decoration: none;
+}
+
+.calendar .months li a{
+	font-size: 10px;
+	color: #C7BEBE;
+	text-align: center;
+	width: 32px;
+	margin-bottom: 20px;
+}
+
+.calendar .months li .selected{
+	font-weight: bold;
+	color: #747978;
+}
+
+.calendar .weekday li a{
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 12px;
+	margin-top: 40px;
+}
+
+.calendar .days li{14%;55px;
+}
+
+.calendar .days li a{
+	width: 36px;
+	height: 24px;
+	text-align: center;
+	margin: auto auto;
+	font-size: 12px;
+	font-weight: bold;
+	border-radius: 12px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+
+
+.calendar .days li a:hover{
+	background-color: #EEEDE9;
+}
+
+.calendar .days li .selected{
+	background-color: #0053a0!important;
+	color: #ffffff;
+}
+
+.calendar .days li .event{
+	color: #0053a0;
+}
+
+.rButton{
+	float: right;
+	overflow: hidden;
+	padding: 17px; 
+	background-color:  #0053a0;
+	margin: 20px;
+}
+
+.rButton a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.rButton2{
+	float: right;
+	overflow: hidden;
+	padding: 17px; 
+	background-color:  #0053a0;
+}
+
+.rButton2 a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.profileicon{
+	float: left;
+	width: 60px;
+	height: 60px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	margin-right: 20px;
+	z-index: 1;
+}
+
+.receivericon{
+	position: absolute;
+	margin: 35px 0px 0px -40px;
+	width: 25px;
+	height: 25px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	z-index: 2;
+	border:4px solid #fff;
+}
+
+.important{
+	overflow: hidden;
+	background-color: red;
+	opacity: 0.8;
+}
+
+footer{
+	display: block;
+	height: 200px;
+	width: 100%;
+	background-color: #F0F0F0;
+	color: #BFBFBF;
+	font-size: 12px;
+}
+
+.footer{
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+	margin-top: -5px;
+}
+
+.footer .column{
+	width: 25%;
+	float: left;
+}

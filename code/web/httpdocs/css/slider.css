@@ -1,0 +1,128 @@
+.mainSliderContainer {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.slidercontainer {
+    height: 100%;
+    width: 100%;
+}
+.slidercontainer .sliderviewport {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slidercontainer .sliderviewport .slider {
+    width: 1000%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0px;
+}
+
+.slidercontainer .sliderviewport .slider .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    float:left;
+    margin-left: 0;
+    position: relative;
+}
+
+div#slide1 {
+    background: url(../images/slide3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div#slide2 {
+    background: url(../images/slide2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div#slide3 {
+    background: url(../images/slide3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div#slide4 {
+    background: url(../images/slide4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.titleblock {
+    position: absolute;
+    bottom: 150px;
+    width: 100%;
+}
+
+.titleblock h1, .titleblock h3 {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.titleblock h1 {
+    font-weight: 400;
+    font-size: 3em;
+}
+
+.titleblock h3 {
+    font-weight: 300;
+    font-size: 1.5em;
+    margin-bottom: 12px;
+}
+
+.titleblock h3 span {
+    font-weight: 400;
+}
+
+div.bulletscontainer {
+    position: absolute;
+    width: 100px;
+    margin: 0 calc(50% - 50px);
+    bottom: 50px;
+}
+
+div.bulletscontainer ul {
+    width: 100%;
+}
+
+div.bulletscontainer ul li {
+    width: 33.33%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+div.bulletscontainer ul li.active > img:not(:first-child) {
+    display: inline-block !important;
+}
+
+div.bulletscontainer ul li.active img:first-child {
+    display: none !important;
+}
+
+div.bulletscontainer ul li a {
+    cursor: pointer;
+}
+
+div.bulletscontainer ul li img {
+    width: 12px;
+    margin: auto;
+    display: block;
+}
+
+div.bulletscontainer img:not(:first-child) {
+    display: none;
+}

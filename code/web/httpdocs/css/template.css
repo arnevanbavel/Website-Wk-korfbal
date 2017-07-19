@@ -1,0 +1,526 @@
+/* header classes */
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 80px;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+.header:hover {
+    background: white;
+}
+
+.altHeader {
+    background: white;
+}
+
+.header .headerNavbar ul li * {
+    color: white;
+}
+
+.header:hover .headerNavbar ul li * {
+    color: black;
+}
+
+.activeMenu .headerNavbar ul li * {
+    color: black !important;
+}
+
+.altHeader .headerNavbar ul li * {
+    color: black !important;
+}
+
+.header:hover .headerNavbar ul li div i {
+    color: rgb(182, 182, 182) !important;
+}
+
+.activeMenu .headerNavbar ul li div i {
+    color: rgb(182, 182, 182) !important;
+}
+
+.altHeader .headerNavbar ul li div i {
+    color: rgb(182, 182, 182) !important;
+}
+
+.header:hover .headerNavbar ul li div i.searchIcon {
+    color: black !important;
+}
+
+.activeMenu .headerNavbar ul li div i.searchIcon {
+    color: black !important;
+}
+
+.altHeader .headerNavbar ul li div i.searchIcon {
+    color: black !important;
+}
+
+.header:hover .headerNavbar ul li div i.searchClose {
+    color: black !important;
+}
+
+.activeMenu .headerNavbar ul li div i.searchClose {
+    color: black !important;
+}
+
+.altHeader .headerNavbar ul li div i.searchClose {
+    color: black !important;
+}
+
+.header > .headerNavbar > ul > li.extraMenu > a {
+    padding-right: 20px;
+}
+
+.header .headerLogo {
+    position: absolute;
+    top: 0px;
+    left: calc((100% - 900px) * 0.5);
+}
+
+.header .headerLogo img {
+    height: 80px;
+}
+
+.header .headerNavbar {
+    width: 100%;
+    margin-right: calc((100% - 900px) * 0.5);
+    float: right;
+}
+
+.header .headerNavbar ul {
+    float: right;
+}
+
+.header .headerNavbar ul li {
+    float: left;
+    display: inline-block;
+    margin-left: 40px;
+    min-width: 40px;
+    height: calc(100% - 32px);
+    padding-top: 32px;
+}
+
+.header .headerNavbar ul li a {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.header .headerNavbar ul li .navBarContent {
+    width: calc(100% - 80px);
+    position: absolute;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    top: 80px;
+    left: 0;
+    opacity: 0;
+    background: white;
+    transition: 0.4s all linear;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}   
+
+.header .headerNavbar ul li .navBarContent * {
+    transition: 0.4s all linear;
+    opacity: 0;
+}
+
+.navBarContent .mediaTopic {
+    width: calc(25% - 30px);
+    margin-right: 40px;
+    float: left;
+    display: inline-block;
+}
+
+.navBarContent > .mediaTopic:nth-child(4n+0) {
+    margin-right: 0;
+}
+
+.navBarContent .mediaTopic .image {
+    width: 100%;
+    height: 200px;
+}
+
+.navBarContent .mediaTopic h1 {
+    margin-top: 20px;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.navBarContent .mediaAllTab {
+    width: calc(100% + 80px);
+    padding-top: 40px;
+    border-top: 1px solid lightgray;
+    text-align: center;
+    margin-left: -40px;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.navBarContent .mediaAllTab h1 {
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 0px;
+}
+
+.navBarContent .competitionTopic {
+    width: calc(33.333% - 80px - 26.66667px);
+    float: left;
+    display: inline-block;
+    margin-right: 40px;
+    padding: 40px;
+}
+
+.navBarContent .competitionTopic:hover {
+    background: #EEEEEE;
+}
+
+div.navBarContent > div.competitionTopic:nth-child(3n+0) {
+    margin-right: 0;
+}
+
+.navBarContent .competitionTopic a img {
+    width: 10%;
+    padding-right: 20px;
+    display: inline-block;
+    float: left;
+}
+
+.navBarContent .competitionTopic a h1 {
+    display: inline-block;
+    width: calc(80% - 20px);
+    float: left;
+    font-size: 1.2em;
+    padding-bottom: 6px;
+}
+
+.navBarContent .competitionTopic a h2 {
+    display: inline-block;
+    width: calc(80% - 20px);
+    float: left;
+    font-size: 0.8em;
+}
+
+.navBarContent input {
+    font-size: 2.5em;
+    font-weight: 100;
+    border-radius: 0;
+    border: none;
+    background: #ffffff;
+    height: 100%;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    font-family: helvetica, sans-serif;
+}
+
+.navBarContent input:focus {
+  outline: none;
+}
+
+.header .headerNavbar ul li .show {
+    opacity: 1;
+}
+
+.header .headerNavbar ul li .show * {
+    opacity: 1;
+}
+
+.header .headerNavbar ul li .remove {
+    display: none;
+}
+
+div.iconcontainer {
+    position: relative;
+}
+
+i {
+    color: black;
+    transition: 0.2s all linear;
+}
+
+i.iconMenu {
+    position: absolute;
+    top: -14px;
+    right: 0px;
+    font-size: 0.8em;
+}
+
+i.iconClose {
+    position: absolute;
+    top: -13px;
+    right: 2px;
+    opacity: 0;
+    font-size: 0.8em;
+}
+
+i.searchIcon {
+    position: absolute;
+    top: -1px;
+    right: 0px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+i.searchClose {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 1em;
+    cursor: pointer;
+    opacity: 0;
+}
+
+/* Alternative Menu Classes */
+
+div.altMenu {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 520px;
+    height: 100vh;
+    background: rgb(40, 40, 40);
+    z-index: -1;
+}
+
+div.altMenu > div.mainMenu {
+    left: 0;
+    width: 260px;
+}
+
+div.altMenu > div.subMenu {
+    right: -15px;
+    display: none;
+    visibility: hidden;
+    overflow-y: scroll;
+    width: 275px;
+}
+
+div.altMenu > div.activeSubMenu {
+    display: block !important;
+    visibility: visible !important;
+}
+
+div.altMenu > div {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+}
+
+div.altMenu > div > ul > li {
+    padding: 20px 40px;
+    font-weight: 100;
+    line-height: 40px;
+    color: white;
+    border-bottom: 1px solid rgb(51, 51, 51);
+    position: relative;
+    cursor: pointer;
+}
+
+div.altMenu > div > ul > li.subMenuAllTab {
+    background: rgb(53, 53, 53);
+}
+
+div.altMenu > div > ul > li.altMenuBack {
+    padding: 20px;
+    padding-left: 40px;
+    background: rgb(53, 53, 53);
+}
+
+div.altMenu > div > ul > li > a {
+    color: white;
+}
+
+div.altMenu > div > ul > li > i.altMenuArrow {
+    position: absolute;
+    top: 29px;
+    right: 40px;
+    color: rgb(80, 80, 80);
+    z-index: 9;
+    font-size: 1.4em;
+}
+
+div.altMenu > div > ul > li > i.altMenuBackArrow {
+    position: absolute;
+    top: 27px;
+    left: 20px;
+    color: rgb(150, 150, 150);
+    z-index: 9;
+    font-size: 1.4em;
+}
+
+div.altMenuContainer {
+    width: 100%;
+    position: relative;
+    display: none;
+}
+
+div.altMenuContainer i.burgerIcon {
+    position: absolute;
+    color: white;
+    top: 0;
+    right: 40px;
+    font-size: 1.85em;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    z-index: 1;
+    padding: 25px 40px;
+    opacity: 1;
+}
+
+div.altMenuContainer i.burgerClose {
+    position: absolute;
+    color: white;
+    top: 0;
+    right: 40px;
+    font-size: 1.85em;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    z-index: 1;
+    padding: 25px 41px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+div.header:hover div.altMenuContainer i.burgerIcon {
+    color: black;
+    background: white;
+}
+
+div.altHeader div.altMenuContainer i.burgerIcon {
+    color: black;
+    background: white;
+}
+
+div.activeMenu div.altMenuContainer i.burgerIcon {
+    color: black;
+    background: white;
+}
+
+div.header:hover div.altMenuContainer i.burgerClose {
+    color: black;
+    background: white;
+}
+
+div.altHeader div.altMenuContainer i.burgerClose {
+    color: black;
+    background: white;
+}
+
+div.activeMenu div.altMenuContainer i.burgerClose {
+    color: black;
+    background: white;
+    opacity: 1 !important;
+}
+
+
+/* FOOTER CLASSES */
+
+.footer {
+    background: #373737;
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+.footer .footerContainer {
+    width: 900px;
+    margin: auto;
+    position: relative;
+}
+
+.footer .columnContainer {
+    display: inline-block;
+    width: 100%;
+}
+
+.footer .columnContainer .column {
+    width: calc(25% - 15px - 40px);
+    float: left;
+    display: inline-block;
+    color: white;
+    font-weight: 100;
+    padding: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: rgb(52, 52, 52);
+    min-height: 55px;
+}
+
+.footer .columnContainer .column:last-child {
+    width: calc(25% - 15px);
+    padding: 0;
+    background: transparent;
+}
+
+.footer .columnContainer .column:last-child {
+    margin-right: 0;
+}
+
+.footer .columnContainer .column img {
+    width: 100%;
+}
+
+.footer .columnContainer .column a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .columnContainer .column ul {
+
+}
+
+.footer .columnContainer .column ul li {
+    line-height: 20px;
+    text-align: left;
+}
+
+.footer .columnContainer .column ul li:first-child {
+    margin-bottom: 15px;
+}
+
+.footer .columnContainer .column ul li select {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+    margin-left: -8px;
+}
+
+.tagsContainer {
+    width: 100%;
+    display: inline-block;
+}
+
+.tagsContainer .tagContainer {
+    width: calc(100% / 8);
+    float: left;
+    display: inline-block;
+}
+
+.tagsContainer .tagContainer h1 {
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.tagsContainer .tagContainer h2 {
+    font-weight: 100;
+    font-size: 1em;
+}
+
+#search-results {
+    margin-top: 40px;

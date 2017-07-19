@@ -1,0 +1,464 @@
+/* CSS About page */
+
+.aboutContainer {
+    width: 100%;
+    padding: 0px 0 40px;
+}
+
+.aboutContainer * {
+    display: inline-block;
+    font-weight: 100;
+}
+
+.aboutContainer div {
+    padding: 20px;
+    width: calc(100% - 40px);
+    background: white;
+}
+
+.aboutContainer > div > h1 {
+    font-size: 2em;
+    width: 100%;
+    font-weight: 400;
+}
+
+.aboutContainer > div > h2 {
+    font-size: 1.5em;
+    width: 100%;
+    font-weight: 400;
+}
+
+.aboutContainer > div > p {
+    font-size: 1.1em;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.aboutContainer > ul {
+    width: calc(25% - 40px);
+    padding: 40px 20px;
+    display: inline-block;
+    float: left;
+    margin-top: 40px;
+    background: white;
+    margin-bottom: 40px;
+}
+
+.aboutContainer > ul > li {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.aboutContainer > ul > li:first-child {
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+/* CSS Media overview page */
+
+.mediaContainer {
+    width: 100%;
+    padding: 0px 0 20px;
+}
+
+.mediaBlocks .image {
+    width: 100%;
+    height: 150px;
+    border-bottom: 5px solid #EBEBEB;
+}
+
+.mediaContainer > div > div > a {
+    color: black;
+}
+
+.mediaContainer > div > div > a > h1 {
+    padding: 20px;
+    font-size: 1em;
+    font-weight: 400;
+} 
+
+.mediaContainer .album {
+    background: rgb(140, 140, 140);
+    color: white !important;
+}
+
+.mediaContainer .photo {
+    background: rgb(200, 200, 200);
+    color: white !important;
+}
+
+/* CSS Media Individual page */
+
+.mediaIndContainer {
+    width: 100%;
+    padding: 0px 0 40px;
+}
+
+.mediaIndContainer .otherContainer {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.mediaIndContainer > div > div > div > a > img {
+    width: 100%;
+    border-bottom: 5px solid #EBEBEB;
+}
+
+.mediaIndContainer > div > div > div > h1 {
+    padding: 20px;
+    font-size: 1em;
+    font-weight: 400;
+} 
+
+/* CSS News Overview page */
+
+.newsContainer {
+    width: 100%;
+    padding: 0px 0 20px;
+}
+
+/* CSS News Individual page */
+
+.newsIndContainer {
+    width: 100%;
+    padding: 0px 0 20px;
+}
+
+.newsIndContainer > div {
+    width: 100%;
+    display: inline-block;
+}
+
+.newsIndContainer .otherContainer {
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* CSS Teams overview page */
+
+.teamsContainer {
+    padding-bottom: 20px;
+}
+
+.teamsContainer div {
+    display: inline-block;
+}
+
+.teamsContainer > div > div > a {
+    color: black;
+}
+
+.teamsContainer > div > div > a > h1 {
+    padding: 20px;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+} 
+
+.teamsContainer .image {
+    width: 100%;
+    height: 120px;
+    border-bottom: 5px solid #EBEBEB;
+}
+
+/* CSS Teams Individual page */
+
+.teamIndContainer {
+    width: 100%;
+    padding: 0px 0 20px;
+}
+
+.teamIndContainer p {
+}
+
+.teamIndContainer .teamPhotoContainer {
+    width: 100%;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.teamIndContainer .teamPhotoContainer img {
+    width: 100%;
+}
+
+.teamIndContainer .teamPlayers {
+    margin-bottom: -20px; 
+}
+
+.teamIndContainer .teamPlayers h1 {
+    padding: 20px;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+} 
+
+.teamIndContainer .teamPlayers .image {
+    width: 100%;
+    border-bottom: 5px solid #EBEBEB;
+    height: 250px;
+}
+
+.teamIndContainer .twitterContainer {
+    width: calc(100% - 40px);
+    height: 300px;
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* CSS Schedule Page */
+
+.scheduleOptionsContainer {
+    margin-bottom: 40px;
+    margin-top: 120px;
+}
+
+.scheduleOptionsContainer > div {
+    margin-bottom: 0;
+}
+
+.scheduleOptionsContainer div h1 {
+    display: block;
+    width: calc(100% - 40px);
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: 1.2em;
+    transition: color 0.5s ease;
+    font-weight: 100;
+    line-height: 20px;
+}
+
+.scheduleOptionsContainer div select {
+    width: calc(100% - 40px);
+    padding: 20px;
+    background-color: white;
+    border: none;
+    font-size: 1.2em;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    margin-left: 20px;
+    font-family: Ubuntu;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+.scheduleOptionsContainer div select:focus {
+  outline: none;
+}
+
+.eventsContainer {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.eventsContainer * {
+    color: black;
+}
+
+.eventsContainer .event {
+    width: 100%;    
+    margin-bottom: 20px;
+    
+}
+
+.eventsContainer > .event:last-child {
+    margin-bottom: 0;
+}
+
+.eventsContainer .event .eventTitle {
+    width: calc(100% - 40px);
+    position: relative;
+    padding: 20px;
+    background: white;
+    border-bottom: 5px solid #EBEBEB;
+}
+
+.eventsContainer .event .eventTitle h1, .eventsContainer .event .eventTitle h2 {
+    text-align: center;
+    display: block;
+}
+
+.eventsContainer .event .eventTitle h1 {
+    font-size: 1.2em;
+    font-weight: 400;
+    position: absolute;
+    top: 30px;
+}
+
+.eventsContainer > a > .event > .eventTitle > h1.leftTeam {
+    left: 20px;
+}
+
+.eventsContainer > a > .event > .eventTitle > h1.rightTeam {
+    right: 20px;
+}
+
+.eventsContainer .event .eventTitle h2 {
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.eventsContainer > .event > .eventTitle > h2:last-child {
+    margin-top: 5px;
+}
+
+.eventsContainer .event .eventContent {
+    width: calc(100% - 40px);
+    position: relative;
+    padding: 20px;
+    height: 90px;
+    background: white;
+}
+
+.eventsContainer .event .eventContent img {
+    height: 90px;
+    position: absolute;
+    top: 20px;
+    border: 1px solid #EBEBEB;
+}
+
+.eventsContainer > a > .event > .eventContent > img:first-child {
+    left: 20px;
+}
+
+.eventsContainer > a > .event > .eventContent > img:last-child {
+    right: 20px;
+}
+
+.eventsContainer .event .eventContent h1 {
+    width: 50px;
+    position: absolute;
+    left: calc(50% - 25px);
+    font-size: 1.5em;
+    text-align: center;
+    top: 55px;
+}
+
+.eventsContainer .event .eventContent h2 {
+    width: 50px;
+    position: absolute;
+    font-size: 2em;
+    text-align: center;
+    top: 50px;
+}
+
+.eventsContainer .event .eventContent h2.leftScore {
+    left: calc(31% - 25px + 20px);
+}
+
+.eventsContainer .event .eventContent h2.rightScore {
+    right: calc(31% - 25px + 20px);
+}
+
+.eventsContainer .event .eventContent h3 {
+    width: 500px;
+    position: absolute;
+    font-size: 1.2em;
+    text-align: center;
+    left: calc(50% - 250px);
+    font-weight: 100;
+}
+
+.eventsContainer .event .eventContent h3.place {
+    top: 20px;
+}
+
+.eventsContainer .event .eventContent h3.time {
+    bottom: 20px;
+    display: none;
+}
+
+.ScheduleContainer {
+    padding-bottom: 20px;
+}
+
+.ScheduleIndContainer .gameInfoContainer {
+    margin-bottom: 40px;
+}
+
+/* CSS Locations Page */
+
+.locationsContainer {
+    padding-bottom: 20px;
+}
+
+.locationsContainer .location {
+    margin-bottom: 20px;
+}
+
+.locationsContainer .location .leftContainer p:last-child {
+    margin-top: 20px;
+}
+
+/* CSS Ticket Page */
+
+.ticketsContainer {
+    
+}
+
+.ticketContainer {
+    width: calc(100% - 40px);
+    padding: 20px;
+    background: white;
+}
+
+.ticketContainer .ticket {
+    width: 100%;
+    display: inline-block;
+    font-weight: 100;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 10px 0;
+}
+
+.ticketContainer > .ticket:first-child {
+    border: none;
+}
+
+.ticketContainer > .ticket:last-child {
+    border: none;
+}
+
+.ticketContainer .ticket div {
+    display: inline-block;
+    float: left;
+}
+
+.ticketContainer > h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.ticketContainer .ticket .description {
+    width: 60%;
+}
+
+.ticketContainer .ticket .description p {
+    font-weight: 400;
+}
+
+.ticketContainer .ticket .price {
+    width: 20%;
+}
+
+.ticketContainer .ticket .duration {
+    width: 20%;
+    text-align: right
+}
+
+/* CSS Error page */
+
+.errorContainer {
+    height: 80vh;
+}
+
+/* CSS Game page */
+
+div.gameContainer > div.game > div {
+    margin-bottom: 40px;
+    margin-left: -30px;
+} 

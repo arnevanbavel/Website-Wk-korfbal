@@ -1,0 +1,46 @@
+@media only screen 
+and (max-width: 450px) {
+    .span4Container .span4 {
+        width: 100%;
+    }
+    div.span4Container > div.span4:nth-child(1n+0) {
+        margin-right: 0px;
+    }
+    div.span4Container > div.span4:nth-child(2n+0) {
+        margin-right: 0px;
+    }
+    .flagContainer .flag {
+        width: 50%;
+    }
+    div.flagContainer > div.flag:nth-child(2n+0) {
+        margin-right: 0px;
+    }
+    .teamsContainer .image {
+        height: 42.8vw;
+    }
+    .eventsContainer .event .eventContent img {
+        height: 40px;
+    }
+    .eventsContainer .event .eventContent {
+        height: 40px;
+    }
+    .eventsContainer .event .eventContent h1 {
+        visibility: hidden;
+    }
+    .eventsContainer .event .eventContent h2 {
+        top: 32px;
+        font-size: 1.2em;
+    }
+    .eventsContainer .event .eventContent h3 {
+        font-size: 1em;
+    }
+    .eventsContainer .event .eventTitle h1 {
+        font-size: 0.9em;
+        top: 50px;
+    }
+    .eventTitle > h2:last-child {
+        margin-top: 40px;
+    }
+}
+
+
